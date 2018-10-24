@@ -1,0 +1,71 @@
+body {
+  font: normal 12px/18px Arial, Helvetica, sans-serif;
+  padding: 10px;
+  background-color: #ddbc9b;
+}
+
+#content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  color: #000;
+}
+#content .img-right {
+  border: 3px solid #8d3d00;
+  padding: 5px;
+  float: right;
+  margin: 0 0 15px 15px;
+}
+#content h1, #content h2 {
+  color: #8d3d00;
+}
+#content h2 {
+  font-style: italic;
+}
+#content .brief {
+  box-sizing: border-box;
+  font-style: italic;
+  padding: 20px;
+  width: 300px;
+  background-color: #fadcba;
+  float: left;
+  margin: 0 20px 10px 0;
+}
+#content .img-left {
+  float: left;
+  margin: 0 20px 20px 0;
+  border: 3px solid #8d3d00;
+  padding: 5px;
+}
+#content a {
+  color: #3f6aa1;
+}
+#content table {
+  border-collapse: collapse;
+  width: 80%;
+}
+#content table caption {
+  text-align: right;
+  font-style: italic;
+  font-size: 14px;
+  padding: 10px;
+}
+#content table th {
+  background-color: #e0e0e0;
+  font-weight: normal;
+  padding: 10px 20px;
+  text-align: left;
+}
+#content table tr {
+  border-bottom: 1px solid #e0e0e0;
+}
+#content table tr td {
+  padding: 10px;
+  background-color: inherit;
+}
+#content table tr th {
+  border: 2px solid #fff;
+}
+
+/*# sourceMappingURL=style1.css.map */

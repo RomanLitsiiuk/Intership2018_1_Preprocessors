@@ -1,0 +1,36 @@
+$buttonsTextColor: $white;
+$checkboxSymbolColor: $dirtyWhite;
+$checkboxBackgroundColor: $littleGray;
+$paginationHoverTextColor: $dirtyWhite;
+$paginationTextColor: $dark;
+$paginationPrimaryBackground: $littleGray;
+$tabsUnderlinedTextColor: $gray;
+$tabsFlatTextColor: $darkGray;
+
+$buttonsBackground: (
+  button--first: $green,
+  button--second: $orange,
+  button--third: $red,
+  button--fourth: $blue,
+  button--fifth: $black
+);
+
+$checkboxesBackground: (
+  checkbox--first: $green,
+  checkbox--second: $orange,
+  checkbox--third: $red,
+  checkbox--fourth: $blue,
+  checkbox--fifth: $black
+);
+
+$paginationHoverBackground: (
+  pagination--first: $green,
+  pagination--second: $orange,
+  pagination--third: $red,
+  pagination--fourth: $blue
+);
+
+$tabsHoverColor: (
+    tabs--first-color: $green,
+    tabs--second-color: $red,
+);

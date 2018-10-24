@@ -1,0 +1,43 @@
+.pagination {
+  display: flex;
+  flex-basis: 22%;
+  justify-content: center;
+  margin: 20px 0;
+  
+  @media screen and (max-width: 1120px) {
+    flex-basis: 45%;
+  }
+  
+  @media screen and (max-width: 640px) {
+    flex-basis: 80%;
+  }
+  
+  &__button {
+    @include blockSize(36px, 36px, 0, 5px);
+    @include borderStyle(1px, 5px);
+    @include background($paginationPrimaryBackground);
+    color: $dark;
+    
+    &:active {
+      background: $paginationPrimaryBackground;
+      border-color: $paginationPrimaryBackground;
+    }
+  }
+  
+  &__link {
+    @include blockSize(36px, 36px, 8px 0, 5px);
+    @include borderStyle(1px, 5px);
+    @include background($paginationPrimaryBackground);
+    background-color: $paginationPrimaryBackground;
+    text-decoration: none;
+    color: $paginationTextColor;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    
+    &:visited {
+      background: $paginationPrimaryBackground;
+      border-color: $paginationPrimaryBackground;
+    }
+  }
+}

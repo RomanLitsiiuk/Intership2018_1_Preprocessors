@@ -1,0 +1,29 @@
+.checkbox {
+  display: none;
+  
+  &__label {
+    @include blockSize(28px, 28px, 0,10px 0);
+    @include borderStyle(2px, 5px);
+    position: relative;
+    
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  
+  &:checked + .checkbox__label,
+  &:disabled + .checkbox__label {
+    @include fa-icon;
+    @extend .fas;
+    
+    &::before {
+      content: "\f00c";
+      color: $checkboxSymbolColor;
+      font-size: 13px;
+      padding: 6px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}

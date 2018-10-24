@@ -1,0 +1,71 @@
+body {
+  font: normal 15px/20px Georgia, "Times New Roman", Times, serif;
+  padding: 10px;
+  background-color: #659a01;
+}
+
+#content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #666701;
+  color: #fff;
+}
+#content .img-right {
+  border: 1px solid #fff;
+  padding: 5px;
+  float: right;
+  margin: 0 0 15px 15px;
+}
+#content h1, #content h2 {
+  color: #ffce10;
+}
+#content h2 {
+  font-style: normal;
+}
+#content .brief {
+  box-sizing: border-box;
+  font-style: italic;
+  padding: 20px;
+  width: 100%;
+  background-color: #677d01;
+  float: left;
+  margin: 0 20px 10px 0;
+}
+#content .img-left {
+  float: left;
+  margin: 0 20px 20px 0;
+  border: 1px solid #fff;
+  padding: 5px;
+}
+#content a {
+  color: #ffce10;
+}
+#content table {
+  border-collapse: collapse;
+  width: 100%;
+}
+#content table caption {
+  text-align: right;
+  font-style: italic;
+  font-size: 14px;
+  padding: 10px;
+}
+#content table th {
+  background-color: #94a34e;
+  font-weight: normal;
+  padding: 10px 20px;
+  text-align: left;
+}
+#content table tr {
+  border-bottom: 1px solid #94a34e;
+}
+#content table tr td {
+  padding: 10px;
+  background-color: #677d01;
+}
+#content table tr th {
+  border: 2px solid #94a34e;
+}
+
+/*# sourceMappingURL=style2.css.map */

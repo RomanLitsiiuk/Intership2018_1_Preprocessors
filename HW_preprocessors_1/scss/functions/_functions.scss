@@ -1,0 +1,60 @@
+@each $element, $color in $buttonsBackground {
+  .#{$element} {
+    @include background($color);
+    
+    &:hover {
+      background: $color;
+      padding: 16px 0;
+    }
+    
+    &:active {
+      background: lighten($color, 3%);
+    }
+  }
+}
+
+@each $element, $color in $checkboxesBackground {
+  .#{$element} {
+    & + .checkbox__label {
+      background: $checkboxBackgroundColor;
+      border-color: darken($checkboxBackgroundColor, 12%);
+    }
+    
+    &:checked + .checkbox__label,
+    &:disabled + .checkbox__label {
+      @include background($color);
+    }
+    
+    &:disabled + .checkbox__label {
+      opacity: 0.5;
+    }
+  }
+}
+
+@each $element, $color in $paginationHoverBackground {
+  .#{$element} {
+    & > .pagination__link:hover {
+      @include background($color);
+      color: $paginationHoverTextColor;
+    }
+    
+    & > .pagination__link:active {
+      background: $color;
+      border-color: $color;
+    }
+  }
+}
+
+@each $element, $color in $tabsHoverColor {
+  .#{$element} {
+    &.tabs--underlined > .tabs__link:hover {
+      color: darken($tabsUnderlinedTextColor, 80%);
+      border-bottom: 3px solid $color;
+    }
+    
+    &.tabs--flat > .tabs__link:hover {
+      @include background($color);
+      color: lighten($tabsFlatTextColor, 80%);
+    }
+  }
+}

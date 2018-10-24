@@ -1,0 +1,19 @@
+@mixin background($basicColor) {
+  background-color: $basicColor;
+  border-color: darken($basicColor, 5%);
+  background: linear-gradient(to top, darken($basicColor, 2%), lighten($basicColor, 10%));
+}
+
+@mixin borderStyle($width, $radius) {
+  border-radius: $radius;
+  border-width: $width;
+  border-style: solid;
+}
+
+@mixin blockSize($height, $width,  $paddng, $margin) {
+  width: $width;
+  height: $height;
+  padding: $paddng;
+  margin: $margin;
+  box-sizing: border-box;
+}

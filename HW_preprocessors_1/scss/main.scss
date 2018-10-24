@@ -1,0 +1,41 @@
+@import "reset/_reset";
+@import "fonts/_fonts";
+@import "color-matrix/_color-matrix";
+@import "variables/_variables";
+@import "mixins/_mixins";
+@import "functions/_functions";
+@import "blocks/_button";
+@import "blocks/_checkbox";
+@import "blocks/_pagination";
+@import "blocks/_tabs";
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  
+  &__buttons-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  &__checkboxes-block {
+    max-width: 260px;
+    @extend .container__buttons-block;
+  }
+  
+  &__paginations-block {
+    @extend .container__buttons-block;
+  }
+  
+  &__tabs-block {
+    @extend .container__buttons-block;
+    justify-content: flex-start;
+  }
+}
+
+.heading {
+  text-transform: uppercase;
+  font-weight: 100;
+  padding: 25px;
+}

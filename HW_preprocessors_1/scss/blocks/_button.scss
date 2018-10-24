@@ -1,0 +1,23 @@
+.button {
+  @include borderStyle(1px, 3px);
+  flex-basis: 17%;
+  margin: 20px 0;
+  padding: 15px;
+  font-size: 20px;
+  box-shadow: 0 1px 1px rgba(0,0,0, .4);
+  box-sizing: border-box;
+  color: $buttonsTextColor;
+  
+  @media screen and (max-width: 480px) {
+    flex-basis: 80%;
+  }
+  
+  &:hover {
+    border: none;
+    box-shadow: none;
+  }
+  
+  &:active {
+    box-shadow: 0 0 3px 1px rgba(0,0,0, .3) inset;
+  }
+}
